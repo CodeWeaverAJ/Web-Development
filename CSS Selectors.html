@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div {
+            /* background-color: red; */
+        }
+
+        /* Class Selector */
+        .red {
+            /* background-color: red; */
+        }
+
+        /* ID Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: blue;
+            background-color: orange;
+        }
+
+        /* Decendent Selector */
+        div p {
+            color: violet;
+            background-color: yellowgreen;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: violet;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: blue;
+        }
+
+        p:first-child {
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <p>i am first child</p>
+        <p>i am second child</p>
+    </div>
+    <!-- Element Selector -->
+    <div>
+        I am Element Selector
+    </div>
+
+    <!-- Class Selector -->
+    <div class="red">
+        I am Class Selector
+    </div>
+
+    <!-- ID Selector -->
+    <div id="green">
+        i am ID Selector
+    </div>
+
+    <!-- Child Selector -->
+    <div>
+        <p>
+            i am a para inside a div
+        </p>
+    </div>
+
+    <!-- Decendent Selector -->
+    <div>
+        <article>
+            <p>i am a Decendent Selector</p>
+        </article>
+    </div>
+
+    <a href="http://www.google.com">Go To Google</a>
+    <a href="http://www.facebook.com">Go To Facebook</a>
+
+</body>
+
+</html>
