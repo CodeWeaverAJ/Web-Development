@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Spacificity & Cascada</title>
+    <style>
+        /* The Spacificity of this selector is = 0 */
+        h1{
+            color: red;
+        }
+        /* The Spacificity of this selector is = 10 */
+        .yellow{
+            color: yellow;
+        }
+        /* The Spacificity of this selector is = 10 */
+        .green{
+            color: green;
+        }
+        /* The Spacificity of this selector is = 10 */
+        .blue{
+            color: blue;
+        }
+        /* This Selector is an example of an Attribute Selector. The Spacificity of this selector is = 10 */
+        [data-x="a"]{
+            color: violet;
+        }
+        /* The Spacificity of this selector is = 41 */
+        a.adityaclass.isha-class[herf]:hover{
+            color:blueviolet
+        }
+        /* The Spacificity of this selector is = 10000 */
+        .yellow{
+            color:yellow !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="yellow green blue" data-x="a">CSS Spacificity & Cascada</h1>
+</body>
+</html>
