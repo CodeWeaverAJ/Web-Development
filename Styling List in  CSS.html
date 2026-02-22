@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styling List in CSS</title>
+    <style>
+        ul li {
+            list-style-type: square;
+            list-style-type: devanagari;
+            background-color: lightblue;
+            list-style-position: inside;
+            border: 2px solid green;
+                /* list-style: none; */
+                /* list-style: circle; */
+                list-style-image: url();
+        }
+        li::marker{
+            content: "😍";
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Address</li>
+        </ul>
+    </div>
 </body>
+
 </html>
