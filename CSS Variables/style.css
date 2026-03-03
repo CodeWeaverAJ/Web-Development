@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color: skyblue;
+    --seccolor: rgb(72, 180, 72);
+    --defpad: 34px
+}
+.nav{
+    /* background-color: green; */
+}
+ul{
+    display: flex;
+    color: var(--seccolor);
+    border: 2px solid var(--color);
+    /* background-color: var(--color); */
+    padding: var(--defpad);
+}
+ul li{
+    list-style: none;
+    padding: 24px;
+    background-color: var(--color);
+}
+.container{
+    background-color:var(--seccolor);
+}
