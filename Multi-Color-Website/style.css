@@ -1,0 +1,38 @@
+:root{
+    --color: blue;
+    --seccolor: green;
+    --text-color: yellow;
+    --defpad: 10px;
+    --deflist: square;
+    --nav-bg: purple;
+}
+body{
+    background-color: var(--nav-bg);
+}
+h1{
+    background-color: var(--text-color);
+    color: var(--color);
+}
+ul{
+    background-color: var(--seccolor);
+    color: var(--text-color);
+    list-style: none;
+    display: flex;
+    padding: var(--defpad);
+    margin: 20px;
+    flex-wrap: wrap;
+}
+ul li{
+    padding: 20px;
+    background-color: var(--color);
+}
+ol{
+    background-color: var(--text-color);
+    list-style: var(--deflist);
+    padding: var(--defpad);
+}
+ol li{
+    background-color: var(--seccolor);
+    color: var(--color);
+    padding: 20px;
+}
